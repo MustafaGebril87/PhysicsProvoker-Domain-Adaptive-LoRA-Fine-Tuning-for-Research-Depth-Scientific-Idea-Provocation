@@ -1,0 +1,25 @@
+# Paper
+paper/
+
+# LoRA adapters and checkpoints
+output/
+*.safetensors
+*.pt
+qwen3-*.zip
+
+# Secrets
+.env
+
+# Data (large binary files)
+data/embeddings.npy
+data/arxiv_embeddings.npy
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/

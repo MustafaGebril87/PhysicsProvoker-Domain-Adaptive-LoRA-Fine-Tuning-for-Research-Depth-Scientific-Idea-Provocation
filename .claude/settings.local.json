@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(claude-api)",
+      "Bash(python -c \"import wikipedia, sentence_transformers, anthropic, dotenv, numpy\")",
+      "Bash(python -m pip install -r requirements.txt)",
+      "Bash(python *)",
+      "Bash(NUM_PAIRS=3 python data_prep/generate_pairs.py)",
+      "Bash(NUM_PAIRS=5 python data_prep/generate_pairs.py)",
+      "Bash(PYTHONUTF8=1 python finetune.py)",
+      "Bash(PYTHONUTF8=1 python inference.py \"On Photosynthesis:\" --compare)",
+      "Bash(PYTHONUTF8=1 python inference.py \"What's a non-obvious way to think about Money?\")",
+      "Bash(grep -E --line-buffered \"PROMPT|^[A-Za-z0-9].{40,}|Traceback\")",
+      "Bash(rm -f \"D:/OfficeOfMustafa/logical_fine_tune/data/corpus.jsonl\" \"D:/OfficeOfMustafa/logical_fine_tune/data/embeddings.npy\")",
+      "Bash(PYTHONUTF8=1 python data_prep/build_index.py)",
+      "Bash(PYTHONUTF8=1 python eval/run_eval.py --label \"200pair-baseline\")",
+      "Bash(PYTHONUTF8=1 python data_prep/generate_pairs.py)",
+      "Bash(PYTHONUTF8=1 python -u eval/run_eval.py --label \"600pair-final\")",
+      "Bash(PYTHONUTF8=1 python -u inference.py \"on connection between relativity and quantum mechanics:\" --compare)",
+      "Bash(PYTHONUTF8=1 python -u inference.py \"give me an unusual angel on connection between relativity and quantum mechanics\" --compare)",
+      "Bash(set NUM_PAIRS=600)",
+      "Bash(set PYTHONUTF8=1)",
+      "Bash(NUM_PAIRS=600 python -u data_prep/generate_pairs.py --corpus arxiv)",
+      "Bash(pdflatex --version)",
+      "Bash(pip install *)",
+      "WebFetch(domain:jmlr.org)",
+      "Bash(curl *)",
+      "WebFetch(domain:openreview.net)",
+      "WebFetch(domain:docs.openreview.net)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:info.arxiv.org)",
+      "WebSearch",
+      "WebFetch(domain:jmlr.csail.mit.edu)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "PowerShell(Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::OpenRead\\(\"D:\\\\OfficeOfMustafa\\\\logical_fine_tune\\\\paper\\\\PhysicsProvoker_overleaf.zip\"\\).Entries | Select-Object FullName)"
+    ]
+  }
+}

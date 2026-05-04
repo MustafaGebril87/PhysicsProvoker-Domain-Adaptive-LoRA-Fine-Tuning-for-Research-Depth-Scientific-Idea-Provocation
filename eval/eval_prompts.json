@@ -1,0 +1,18 @@
+[
+  {"prompt": "On Sleep:", "tag": "everyday"},
+  {"prompt": "What's a non-obvious way to think about Procrastination?", "tag": "everyday"},
+  {"prompt": "Take Boredom seriously for a moment. What are people missing?", "tag": "everyday"},
+  {"prompt": "On Habits:", "tag": "everyday"},
+  {"prompt": "I'm stuck on team conflict. Help me see it differently.", "tag": "real-problem"},
+  {"prompt": "Trust -- give me an unusual angle.", "tag": "abstract"},
+  {"prompt": "On Cities:", "tag": "concrete"},
+  {"prompt": "What's a non-obvious way to think about Education?", "tag": "abstract"},
+  {"prompt": "On Rituals:", "tag": "abstract"},
+  {"prompt": "Take Failure seriously for a moment. What are people missing?", "tag": "abstract"},
+  {"prompt": "On Maps:", "tag": "concrete"},
+  {"prompt": "Apologies -- give me an unusual angle.", "tag": "everyday"},
+  {"prompt": "On Speed:", "tag": "abstract"},
+  {"prompt": "What's a non-obvious way to think about Memory?", "tag": "near-domain"},
+  {"prompt": "I'm stuck on writer's block. Help me see it differently.", "tag": "real-problem"},
+  {"prompt": "On Money:", "tag": "near-domain"}
+]

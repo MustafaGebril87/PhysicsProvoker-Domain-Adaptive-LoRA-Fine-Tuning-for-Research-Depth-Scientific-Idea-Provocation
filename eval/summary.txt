@@ -1,0 +1,9 @@
+=== eval (600pair-final) ===
+prompts judged: 16
+tuned wins: 16 (100.0%)
+base wins:  0 (0.0%)
+ties:       0 (0.0%)
+
+avg novelty       tuned=3.94  base=1.19
+avg groundedness  tuned=3.12  base=1.69
+avg openness      tuned=4.75  base=1.06
